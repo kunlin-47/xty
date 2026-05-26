@@ -13,8 +13,7 @@ methodology 是仓库的**核心资产之一**，演化要谨慎、要有积累�
 | `basics.md` | 概念解释 + 推理逻辑（散文式） | 人为主，AI 也可读 |
 | `lookup_tables.md` | 结构化硬数据（表格/矩阵） | AI 必查，人参考 |
 | `sanyuan_jiuyun.md` | 三元九运专题 | 人 + AI |
-
-> 本骨架阶段以上文件**尚未创建**，将在后续 PR 中迁移或新建。
+| `shuzi_zhuyun.md` | 数字助运专题（手机号 / 车牌 / 楼层选数等） | 人 + AI |
 
 ## 关键边界规则
 
@@ -44,7 +43,7 @@ methodology 是仓库的**核心资产之一**，演化要谨慎、要有积累�
 
 ### 规则 3：跨主题专题独立成文
 
-如三元九运（`sanyuan_jiuyun.md`）这种相对独立、自成体系的内容，单独成文。未来如有类似主题（如神煞专题、调候用神专题），同样独立。
+如三元九运（`sanyuan_jiuyun.md`）和数字助运（`shuzi_zhuyun.md`）这种相对独立、自成体系的内容，单独成文。未来如有类似主题（如神煞专题、调候用神专题），同样独立。
 
 ### 规则 4：禁止排盘公式
 
@@ -72,6 +71,7 @@ methodology 的修订要**保守 + 可追溯**：
 methodology/lookup_tables.md
 methodology/basics.md
 methodology/sanyuan_jiuyun.md
+methodology/shuzi_zhuyun.md
 ```
 
 不要在 prompts 中复制 methodology 的内容，始终通过引用，避免双份维护。
