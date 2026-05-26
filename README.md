@@ -59,17 +59,10 @@ xty/
 
 Claude 解盘时只看 `SKILL.md` + 它引用的文件；开发者维护时看 README。两者职责不重叠。
 
-## 现状与迁移路线
+## 下一步推进路线
 
-当前仍有历史文件待按新架构归位：
+（已完成的不再列出，详见 git history）
 
-| 当前位置 | 目标位置 | 处理方式 |
-|---|---|---|
-| `reference/shuzi_zhuyun.md` | `methodology/shuzi_zhuyun.md` | 迁移（已决策放 methodology） |
-
-下一步推进路线（已完成的不再列出，详见 git history）：
-
-- 迁移 `reference/shuzi_zhuyun.md` → `methodology/shuzi_zhuyun.md`。
 - 新建 `prompts/full_analysis.md` 等任务指令。
 
 ## 远期路线（暂不实施，留作记录）
