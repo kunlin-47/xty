@@ -33,13 +33,15 @@
 
 | 何时查 | 文件 |
 |---|---|
-| 地支藏干 / 十神归属 / 合冲刑害 / 长生十二宫 / 空亡 / 五行↔颜色映射 / 五行↔方位映射 | `methodology/lookup_tables.md`（**结构化判断必查，不允许凭记忆作答**） |
+| 地支藏干 / 十神归属 / 合冲刑害 / 长生十二宫 / 空亡 / 五行↔颜色映射 / 五行↔方位映射 / 天乙贵人 / 五行↔材质 / 五行↔五味 / 五行↔时辰 | `methodology/lookup_tables.md`（**结构化判断必查，不允许凭记忆作答**） |
 | 概念辨析、用神 / 喜神 / 忌神判断逻辑、十神含义、五行现实意义 | `methodology/basics.md` |
 | 大运跨越元运边界、时代背景叠加、九运方位旺衰 | `methodology/sanyuan_jiuyun.md` |
 | 助运通用三层框架（用神+五行映射+时空加权） | `methodology/zhuyun_overview.md`（**助运基线必读入口**） |
 | 数字助运（手机 / 车牌 / 楼层 / 密码） | `methodology/shuzi_zhuyun.md` |
 | 颜色助运（穿戴 / 家居 / 车色 / 品牌视觉） | `methodology/yanse_zhuyun.md` |
 | 方位助运（居所朝向 / 床头 / 办公座位 / 城市选择） | `methodology/fangwei_zhuyun.md` |
+| 贵人方位（求人 / 谈判 / 找师长 / 神煞 + 用神双视角） | `methodology/zhuyun_guiren.md` |
+| 材质 / 饰品 / 饮食 / 时辰助运 | `methodology/zhuyun_materials_diet.md` |
 
 ## 工作流
 
@@ -91,8 +93,10 @@
 - **数字**（手机 / 车牌 / 楼层 / 密码）→ `methodology/shuzi_zhuyun.md`
 - **颜色**（穿戴 / 家居主色 / 车色 / 品牌视觉）→ `methodology/yanse_zhuyun.md`
 - **方位**（居所朝向 / 床头 / 办公座位）→ `methodology/fangwei_zhuyun.md`
-- **贵人方位** → `methodology/zhuyun_guiren.md`（待补，缺失时降级为基于用神方位的简版判断并明确标注）
-- **饮食 / 时辰 / 材质** → 待补专题；缺失时按 `methodology/zhuyun_overview.md` §二的通用三层框架现场推演，并显式说明缺乏专题文档支持
+- **贵人方位**（求人 / 谈判 / 找师长 / 合作伙伴）→ `methodology/zhuyun_guiren.md`（神煞天乙 + 用神方位双视角，**两套必须并给**）
+- **材质 / 饰品**（贴身佩戴 / 居所摆件）→ `methodology/zhuyun_materials_diet.md` §三
+- **饮食**（五味 / 食材 / 烹饪）→ `methodology/zhuyun_materials_diet.md` §四（涉及健康问题以医生 / 营养师建议为优先）
+- **时辰**（起床 / 关键决定 / 签约择时）→ `methodology/zhuyun_materials_diet.md` §五
 - **各大运的助运微调**：参考各专题文件中的"命局矛盾时取舍"小节
 
 **严禁**：

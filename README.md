@@ -21,12 +21,14 @@ xty/
 ├── methodology/             # 知识层：可复用的概念、推理逻辑、查询数据
 │   ├── README.md
 │   ├── basics.md            # 概念解释和推理逻辑（语义层）
-│   ├── lookup_tables.md     # 结构化硬数据（藏干、十神矩阵、刑冲合、五行↔颜色↔方位等）
+│   ├── lookup_tables.md     # 结构化硬数据（藏干、十神矩阵、刑冲合、五行↔颜色↔方位↔材质↔饮食↔时辰↔天乙贵人等）
 │   ├── sanyuan_jiuyun.md    # 三元九运
 │   ├── zhuyun_overview.md   # 助运总论（三层叠加通用框架）
 │   ├── shuzi_zhuyun.md      # 数字助运
 │   ├── yanse_zhuyun.md      # 颜色助运
-│   └── fangwei_zhuyun.md    # 方位助运（不含贵人方位）
+│   ├── fangwei_zhuyun.md    # 方位助运（不含贵人方位）
+│   ├── zhuyun_guiren.md     # 贵人方位（神煞天乙 + 用神方位双视角）
+│   └── zhuyun_materials_diet.md  # 材质 / 饮食 / 时辰助运（合一篇）
 │
 ├── prompts/                 # 指令层：自包含的 AI 解盘指令
 │   ├── README.md
