@@ -2,11 +2,12 @@
 
 ## 仓库定位
 
-这个仓库是一个**可复用的八字解盘 AI 系统**，不是命理档案管理系统。
+这个仓库是一个 **Claude Skill**：`bazi-analysis`。
 
-- 核心资产是 `methodology/`（通用知识）和 `prompts/`（AI 指令模板），它们决定整个系统的解盘质量。
-- `charts/` 里的命主数据是**回归测试集 / 验证素材**——用来检验 methodology 和 prompts 的迭代效果，不是档案本体。
-- 命主特定的解盘产出（`dayun_overview.md`、流年文档）是某次跑测的快照，可以重跑、可以丢弃。
+- 入口文件是 `SKILL.md`（Claude 加载时读它）；本 README 是**开发者文档**
+- 核心资产：`methodology/`（通用知识）+ `prompts/`（任务级指令模板）
+- `charts/` 是回归测试集，验证 methodology / prompts 的迭代效果
+- 本仓库只做"解盘"，不做"排盘"——排盘由专业软件完成
 
 > **心智模型**：methodology + prompts 是产品，charts 是测试用例。
 
@@ -14,13 +15,15 @@
 
 ```
 xty/
-├── README.md                # 本文件
+├── SKILL.md                 # Claude Skill 入口（含 frontmatter）
+├── README.md                # 开发者文档（本文件）
 │
 ├── methodology/             # 知识层：可复用的概念、推理逻辑、查询数据
 │   ├── README.md
 │   ├── basics.md            # 概念解释和推理逻辑（语义层）
 │   ├── lookup_tables.md     # 结构化硬数据（藏干、十神矩阵、刑冲合等）
-│   └── sanyuan_jiuyun.md    # 三元九运
+│   ├── sanyuan_jiuyun.md    # 三元九运
+│   └── shuzi_zhuyun.md      # 数字助运
 │
 ├── prompts/                 # 指令层：自包含的 AI 解盘指令
 │   ├── README.md
@@ -41,31 +44,20 @@ xty/
 
 | 层 | 内容 | 变动频率 | 谁读 |
 |---|---|---|---|
-| `methodology/` | 知识与推理规则 | 演进式修订 | 人 + AI |
-| `prompts/` | 任务级完整指令 | 跟随任务定义 | AI（必读） |
-| `charts/` | 命主数据与产出 | 一人一份，可重跑 | AI（输入参考）+ 人（验证） |
+| `methodology/` | 知识与推理规则 | 演进式修订 | 人 + Claude |
+| `prompts/` | 任务级完整指令 | 跟随任务定义 | Claude（必读） |
+| `charts/` | 命主数据与产出 | 一人一份，可重跑 | Claude（输入参考）+ 人（验证） |
 
 **约束**：`charts/` 里的内容不反向污染 `methodology/`。命主特定的发现，验证后升级为通用规则才能写进 `methodology/`。
 
-## 工作流
+## 入口分工
 
-一次完整解盘按以下顺序触发：
+| 文件 | 给谁 | 职责 |
+|---|---|---|
+| `SKILL.md` | Claude（加载到 context） | 触发条件、工作流、知识资源引用、治幻觉约束 |
+| `README.md` | 开发者 / 你自己 | 项目说明、目录、迁移历史、远期路线 |
 
-1. **排盘**：使用专业软件完成排盘，输出落地到 `charts/{chart_id}/static_chart.json`。**本仓库不让 AI 排盘**——AI 排盘运算量大、准确度不可控。
-2. **AI 解盘**：调用 `prompts/full_analysis.md`，AI 按 prompt 内置的工作流：
-   - 读取 `prompts/full_analysis.md`（指令）
-   - 按需引用 `methodology/lookup_tables.md`（查表）
-   - 按需引用 `methodology/basics.md`（推理逻辑）
-   - 读取 `charts/{chart_id}/static_chart.json`（命主数据）
-   - 读取 `charts/{chart_id}/profile.md`（已发生事件，用于校验）
-3. **产出**：AI 输出落地到 `charts/{chart_id}/dayun_overview.md` 或 `liunian/*.md`。
-4. **验证**：人工对照 `profile.md` 中的已发生事件，更新命中度。
-
-## 关键约束
-
-1. **不让 AI 排盘**：所有命盘必须由专业排盘软件完成。AI 只做解读。
-2. **职责边界**：硬数据归 `methodology/lookup_tables.md`；语义/推理归 `methodology/basics.md`；任务流程和输出格式归 `prompts/{task}.md`。
-3. **命主命名**：`charts/` 下使用编号或化名（如 `chart_001`），真实姓名不进入路径。
+Claude 解盘时只看 `SKILL.md` + 它引用的文件；开发者维护时看 README。两者职责不重叠。
 
 ## 现状与迁移路线
 
@@ -73,11 +65,11 @@ xty/
 
 | 当前位置 | 目标位置 | 处理方式 |
 |---|---|---|
-| `reference/shuzi_zhuyun.md` | 待定 | 不在本架构范围内，单独决策 |
+| `reference/shuzi_zhuyun.md` | `methodology/shuzi_zhuyun.md` | 迁移（已决策放 methodology） |
 
 下一步推进路线（已完成的不再列出，详见 git history）：
 
-- 新建 `methodology/lookup_tables.md`（藏干、十神矩阵、刑冲合等结构化数据）。
+- 迁移 `reference/shuzi_zhuyun.md` → `methodology/shuzi_zhuyun.md`。
 - 新建 `prompts/full_analysis.md` 等任务指令。
 
 ## 远期路线（暂不实施，留作记录）
@@ -85,5 +77,4 @@ xty/
 - **回归测试机制**：methodology / prompts 修订后在所有 chart 上重跑，对比新旧产出差异。
 - **methodology 演化日志**：`methodology/calibration_log.md` 记录哪条规则在哪些命主上验证或失败。
 - **流年文档拆分策略**：单步大运文档超过阈值（如 30KB）时按年拆分。
-- **多 LLM 适配**：当前 prompt 默认 Markdown 风格；切换其他模型时再考虑提示工程差异。
 - **schema 校验与自动化**：为 `static_chart.json` 定义 JSON Schema，CI 跑校验。
