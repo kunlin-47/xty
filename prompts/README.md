@@ -78,54 +78,12 @@ prompt 中需要用到 methodology 的内容时，**指明引用路径**，让 A
 1. ...
 2. ...
 
-文件头部必须带 frontmatter，规范见 README。
-
 ## 约束
 - 不使用宿命式表述
 - 古今术语首次出现需用现代汉语翻译
 - 结论必须展示推演过程
 - ...
 ```
-
-## Frontmatter 规范
-
-所有 AI 产出的 `.md` 文件**必须**在头部带 YAML frontmatter，用于支持系统迭代时的回归对比。
-
-### 字段定义
-
-| 字段 | 必填 | 说明 |
-|---|---|---|
-| `prompt` | ✅ | 使用的 prompt 文件路径，如 `prompts/full_analysis.md` |
-| `model` | ✅ | 使用的 LLM 模型名 + 版本，如 `claude-sonnet-4.5` |
-| `generated_at` | ✅ | 生成时间，YYYY-MM-DD 或 ISO8601 |
-| `prompt_commit` | ⚪ | prompt 文件所在的 git commit short hash |
-| `methodology_commit` | ⚪ | methodology 文件所在的 git commit short hash |
-| `notes` | ⚪ | 本次跑测的特殊情况、调整点或备注 |
-
-必填只 3 个，选填可空——避免规范变成维护负担。
-
-### 示例
-
-```yaml
----
-prompt: prompts/full_analysis.md
-prompt_commit: abc1234
-methodology_commit: def5678
-model: claude-sonnet-4.5
-generated_at: 2026-01-15
-notes: 第 3 次重跑，调整了用神判断逻辑
----
-
-# 命局解盘 —— chart_001
-
-（正文从这里开始）
-```
-
-### Prompt 中如何写入这条规则
-
-每份 prompt 的"输出格式"段落必须包含以下指示（或等价表述）：
-
-> 输出文件头部必须带 YAML frontmatter，至少包含 `prompt`、`model`、`generated_at` 三个字段。详见 `prompts/README.md` 的 Frontmatter 规范。
 
 ## 演化机制
 
