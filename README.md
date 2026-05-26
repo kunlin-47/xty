@@ -58,7 +58,7 @@ xty/
    - 按需引用 `methodology/basics.md`（推理逻辑）
    - 读取 `charts/{chart_id}/static_chart.json`（命主数据）
    - 读取 `charts/{chart_id}/profile.md`（已发生事件，用于校验）
-3. **产出**：AI 输出落地到 `charts/{chart_id}/dayun_overview.md` 或 `liunian/*.md`，文件头部带 frontmatter（详见 `prompts/README.md`）。
+3. **产出**：AI 输出落地到 `charts/{chart_id}/dayun_overview.md` 或 `liunian/*.md`。
 4. **验证**：人工对照 `profile.md` 中的已发生事件，更新命中度。
 
 ## 关键约束
@@ -66,27 +66,21 @@ xty/
 1. **不让 AI 排盘**：所有命盘必须由专业排盘软件完成。AI 只做解读。
 2. **职责边界**：硬数据归 `methodology/lookup_tables.md`；语义/推理归 `methodology/basics.md`；任务流程和输出格式归 `prompts/{task}.md`。
 3. **命主命名**：`charts/` 下使用编号或化名（如 `chart_001`），真实姓名不进入路径。
-4. **frontmatter**：所有 AI 产出文件头部必须带 frontmatter，至少包含 `prompt`、`model`、`generated_at` 三个字段（详细规范见 `prompts/README.md`）。
 
 ## 现状与迁移路线
 
-当前仓库已有以下历史文件，**骨架阶段保持不动**，后续按计划迁移：
+当前仍有历史文件待按新架构归位：
 
 | 当前位置 | 目标位置 | 处理方式 |
 |---|---|---|
 | `bazi/bazi_basics.md` | `methodology/basics.md` + `methodology/sanyuan_jiuyun.md` | 拆分迁移 |
-| `bazi/xierui/static_chart.json` | `charts/chart_001/static_chart.json` | 改名迁移 |
-| `bazi/xierui/dayun_overview.md` | `charts/chart_001/dayun_overview.md` | 改名 + 加 frontmatter |
-| `bazi/xierui/dayun_*_liunian.md` | `charts/chart_001/liunian/dayun_NN_*.md` | 改名（编号前缀）+ 加 frontmatter |
 | `reference/shuzi_zhuyun.md` | 待定 | 不在本架构范围内，单独决策 |
 
-迁移按以下 PR 顺序推进：
+下一步推进路线（已完成的不再列出，详见 git history）：
 
-- **PR-1（本次）**：建立目录骨架与 4 份 README，不动现有文件。
-- **PR-2**：迁移 `bazi/xierui/` → `charts/chart_001/`，新增 `profile.md`，给现有产出补 frontmatter。
-- **PR-3**：拆分 `bazi/bazi_basics.md` → `methodology/basics.md` + `methodology/sanyuan_jiuyun.md`，移除其中的硬数据。
-- **PR-4**：新建 `methodology/lookup_tables.md`（藏干、十神矩阵、刑冲合等结构化数据）。
-- **PR-5**：新建 `prompts/full_analysis.md` 等任务指令。
+- 拆分 `bazi/bazi_basics.md` → `methodology/basics.md` + `methodology/sanyuan_jiuyun.md`，移除其中的硬数据。
+- 新建 `methodology/lookup_tables.md`（藏干、十神矩阵、刑冲合等结构化数据）。
+- 新建 `prompts/full_analysis.md` 等任务指令。
 
 ## 远期路线（暂不实施，留作记录）
 
