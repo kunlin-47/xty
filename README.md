@@ -77,7 +77,6 @@ xty/
 
 下一步推进路线（已完成的不再列出，详见 git history）：
 
-- 新建 `methodology/lookup_tables.md`（藏干、十神矩阵、刑冲合等结构化数据）。
 - 新建 `prompts/full_analysis.md` 等任务指令。
 
 ## 远期路线（暂不实施，留作记录）
