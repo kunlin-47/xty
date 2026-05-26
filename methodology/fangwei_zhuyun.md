@@ -4,7 +4,7 @@
 >
 > 凡需要为具体命主选方位（居所朝向 / 办公座位 / 床头朝向 / 出差短居 / 城市层级的发展地点）时，按本文流程套用即可。
 >
-> 本文**不涉及"贵人方位"**——贵人方位涉及神煞天乙贵人与用神方位双视角，单独成文（待补 P2 `zhuyun_guiren.md`）。
+> 本文**不涉及"贵人方位"**——贵人方位涉及神煞天乙贵人与用神方位双视角，独立成文：[`zhuyun_guiren.md`](./zhuyun_guiren.md)。两文为同级专题，本文管"我应在何处生活"，guiren 管"贵人来自何方"。
 
 ---
 
@@ -325,7 +325,7 @@
 ## 十一、与 prompts 的衔接
 
 - [`prompts/full_analysis.md`](../prompts/full_analysis.md) Step 6「发展地点」直接调用本文 §6.6 的城市梯队判断流程。
-- [`prompts/full_analysis.md`](../prompts/full_analysis.md) Step 5「助运基线」中的"贵人方位"项**不在本文范围**（涉及神煞 + 用神双视角，待 P2 `zhuyun_guiren.md` 补完）。
+- [`prompts/full_analysis.md`](../prompts/full_analysis.md) Step 5「助运基线」中的"贵人方位"项**不在本文范围**（涉及神煞 + 用神双视角，由独立的 [`zhuyun_guiren.md`](./zhuyun_guiren.md) 处理）。
 - [`prompts/yearly_focus.md`](../prompts/yearly_focus.md) 中流年方位微调（如该年三煞方 / 太岁方）属流年专题，本文不展开。
 
 ---
@@ -335,4 +335,4 @@
 - 本文是 `zhuyun_overview.md` 三层框架在方位维度的应用，结构与 [`shuzi_zhuyun.md`](./shuzi_zhuyun.md) 一致。
 - 五行↔方位 / 八卦九宫硬数据沉到 [`lookup_tables.md`](./lookup_tables.md) §十四，本文不重复表格。
 - 任何方位推荐**必须**先完成命主用神判定。
-- 贵人方位（含天乙贵人神煞 + 用神方位贵人双视角）单独在 `zhuyun_guiren.md`（P2 待补）中处理，本文不涉及。
+- 贵人方位（含天乙贵人神煞 + 用神方位贵人双视角）单独在 [`zhuyun_guiren.md`](./zhuyun_guiren.md) 中处理，本文不涉及。

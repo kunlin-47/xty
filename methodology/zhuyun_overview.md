@@ -9,8 +9,8 @@
 > - 数字 → [`shuzi_zhuyun.md`](./shuzi_zhuyun.md)（已建，作为本框架的标杆样例）
 > - 颜色 → [`yanse_zhuyun.md`](./yanse_zhuyun.md)
 > - 方位 → [`fangwei_zhuyun.md`](./fangwei_zhuyun.md)
-> - 贵人方位 → 待补（P2）
-> - 材质 / 饰品 / 饮食 / 时辰 → 待补（P3）
+> - 贵人方位 → [`zhuyun_guiren.md`](./zhuyun_guiren.md)（神煞天乙 + 用神方位双视角）
+> - 材质 / 饮食 / 时辰 → [`zhuyun_materials_diet.md`](./zhuyun_materials_diet.md)（合一篇）
 
 ---
 
@@ -131,9 +131,10 @@
 | 数字 | [`shuzi_zhuyun.md`](./shuzi_zhuyun.md) | 手机号、车牌、楼层、密码、择日 | 长期 + 偶发 |
 | 颜色 | [`yanse_zhuyun.md`](./yanse_zhuyun.md) | 穿戴、家居主色、车色、品牌视觉 | 长期为主 |
 | 方位 | [`fangwei_zhuyun.md`](./fangwei_zhuyun.md) | 居所朝向、办公座位、床头、出差、城市选择 | 长期为主 |
-| 贵人方位 | （待补 P2） | 求人、谈判、合作伙伴定位 | 偶发为主 |
-| 材质 / 饰品 | （待补 P3） | 玉石 / 金属 / 木质 / 水晶饰品 | 长期为主 |
-| 饮食 / 时辰 | （待补 P3） | 五味摄入、关键时辰择选 | 长期 + 偶发 |
+| 贵人方位 | [`zhuyun_guiren.md`](./zhuyun_guiren.md) | 求人、谈判、合作伙伴定位、找师长、找资源 | 偶发为主 |
+| 材质 / 饰品 | [`zhuyun_materials_diet.md`](./zhuyun_materials_diet.md) §三 | 玉石 / 金属 / 木质 / 水晶饰品 | 长期为主 |
+| 饮食 | [`zhuyun_materials_diet.md`](./zhuyun_materials_diet.md) §四 | 五味摄入、食材类别 | 高频长期 |
+| 时辰 | [`zhuyun_materials_diet.md`](./zhuyun_materials_diet.md) §五 | 起床、关键决定择时 | 高频（起床）+ 偶发 |
 
 ---
 

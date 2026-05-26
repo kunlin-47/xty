@@ -38,7 +38,7 @@
 | 流年天干十神归属 / 地支藏干十神 | `methodology/lookup_tables.md` |
 | 用神理论、调候、十神含义 | `methodology/basics.md` |
 | 大运跨越元运边界、当年时代背景 | `methodology/sanyuan_jiuyun.md` |
-| 该年助运微调（数字 / 颜色 / 方位） | `methodology/zhuyun_overview.md` 入口 → `shuzi_zhuyun.md` / `yanse_zhuyun.md` / `fangwei_zhuyun.md` 各专题 |
+| 该年助运微调（数字 / 颜色 / 方位 / 时辰 / 饮食 / 贵人方位） | `methodology/zhuyun_overview.md` 入口 → `shuzi_zhuyun.md` / `yanse_zhuyun.md` / `fangwei_zhuyun.md` / `zhuyun_guiren.md` / `zhuyun_materials_diet.md` 各专题 |
 
 ## 工作流
 
@@ -113,7 +113,7 @@
 
 ### Step 5 — 助运微调
 
-该大运下的数字 / 颜色 / 方位的偏移（基于 `methodology/zhuyun_overview.md` 的"用神 + 五行映射 + 时空加权"三层框架，各维度查 `shuzi_zhuyun.md` / `yanse_zhuyun.md` / `fangwei_zhuyun.md`）。和 `full_analysis.md` 的"助运基线"配套，但只输出**该步大运区别于全局基线的微调**，不重复全局基线。
+该大运下的数字 / 颜色 / 方位 / 贵人方位 / 时辰 / 饮食 / 材质的偏移（基于 `methodology/zhuyun_overview.md` 的"用神 + 五行映射 + 时空加权"三层框架，各维度查 `shuzi_zhuyun.md` / `yanse_zhuyun.md` / `fangwei_zhuyun.md` / `zhuyun_guiren.md` / `zhuyun_materials_diet.md`）。和 `full_analysis.md` 的"助运基线"配套，但只输出**该步大运区别于全局基线的微调**，不重复全局基线。
 
 特别注意：当大运用神与命局基线用神有明显差异时（如基线喜火但走到火过旺的大运），助运推荐应跟着大运用神走，而不是停留在基线。
 
