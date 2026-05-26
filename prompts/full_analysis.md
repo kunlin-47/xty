@@ -33,10 +33,13 @@
 
 | 何时查 | 文件 |
 |---|---|
-| 地支藏干 / 十神归属 / 合冲刑害 / 长生十二宫 / 空亡 | `methodology/lookup_tables.md`（**结构化判断必查，不允许凭记忆作答**） |
+| 地支藏干 / 十神归属 / 合冲刑害 / 长生十二宫 / 空亡 / 五行↔颜色映射 / 五行↔方位映射 | `methodology/lookup_tables.md`（**结构化判断必查，不允许凭记忆作答**） |
 | 概念辨析、用神 / 喜神 / 忌神判断逻辑、十神含义、五行现实意义 | `methodology/basics.md` |
-| 大运跨越元运边界、时代背景叠加 | `methodology/sanyuan_jiuyun.md` |
-| 数字 / 颜色 / 方位等助运章节 | `methodology/shuzi_zhuyun.md` |
+| 大运跨越元运边界、时代背景叠加、九运方位旺衰 | `methodology/sanyuan_jiuyun.md` |
+| 助运通用三层框架（用神+五行映射+时空加权） | `methodology/zhuyun_overview.md`（**助运基线必读入口**） |
+| 数字助运（手机 / 车牌 / 楼层 / 密码） | `methodology/shuzi_zhuyun.md` |
+| 颜色助运（穿戴 / 家居 / 车色 / 品牌视觉） | `methodology/yanse_zhuyun.md` |
+| 方位助运（居所朝向 / 床头 / 办公座位 / 城市选择） | `methodology/fangwei_zhuyun.md` |
 
 ## 工作流
 
@@ -83,21 +86,24 @@
 
 ### Step 5 — 助运基线
 
-按 `methodology/shuzi_zhuyun.md` 的「**用神 + 后天洛书 + 当下九运**」三层叠加判定：
+按 `methodology/zhuyun_overview.md` 的「**用神 + 五行映射 + 时空加权**」三层叠加框架判定，各维度对应专题文件：
 
-- 数字（手机 / 车牌 / 楼层等）
-- 颜色 / 饰品 / 材质
-- 饮食 / 时辰 / 灵性活动
-- 贵人方位（神煞结构 + 用神方位双视角）
-- 各大运的助运微调（不同大运下数字 / 颜色推荐会有偏移）
+- **数字**（手机 / 车牌 / 楼层 / 密码）→ `methodology/shuzi_zhuyun.md`
+- **颜色**（穿戴 / 家居主色 / 车色 / 品牌视觉）→ `methodology/yanse_zhuyun.md`
+- **方位**（居所朝向 / 床头 / 办公座位）→ `methodology/fangwei_zhuyun.md`
+- **贵人方位** → `methodology/zhuyun_guiren.md`（待补，缺失时降级为基于用神方位的简版判断并明确标注）
+- **饮食 / 时辰 / 材质** → 待补专题；缺失时按 `methodology/zhuyun_overview.md` §二的通用三层框架现场推演，并显式说明缺乏专题文档支持
+- **各大运的助运微调**：参考各专题文件中的"命局矛盾时取舍"小节
 
-**严禁**：使用"数字能量学"两位数磁场表作主判断（机制不透明）。
+**严禁**：
+- 使用"数字能量学"两位数磁场表作主判断（详见 `shuzi_zhuyun.md` 附录 C）
+- 脱离命主用神给出"招财色 / 桃花方位 / 旺事业号"等"对所有人通用"的论断
 
 ### Step 6 — 发展地点
 
-- 国内方向（按用神方位 + 实际可行性，国内城市分梯队推荐）
-- 国际方向（按方位 + 文化适配）
-- 居所 / 办公 / 床位（微观选址，朝向、楼层、家具材质）
+- 国内方向（按用神方位 + 实际可行性，国内城市分梯队推荐 → 详见 `methodology/fangwei_zhuyun.md` §6.6）
+- 国际方向（按方位 + 文化适配 → 详见 `methodology/fangwei_zhuyun.md` §6.6 + `methodology/lookup_tables.md` §14.5）
+- 居所 / 办公 / 床位（微观选址，朝向、楼层、家具材质 → 详见 `methodology/fangwei_zhuyun.md` §6.1-§6.4）
 
 ### Step 7 — 命局总结（固定四项）
 

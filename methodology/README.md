@@ -13,8 +13,12 @@ methodology 是仓库的**核心资产之一**，演化要谨慎、要有积累�
 | `basics.md` | 概念解释 + 推理逻辑（散文式） | 人为主，AI 也可读 |
 | `lookup_tables.md` | 结构化硬数据（表格/矩阵） | AI 必查，人参考 |
 | `sanyuan_jiuyun.md` | 三元九运专题 | 人 + AI |
+| `zhuyun_overview.md` | 助运总论（三层叠加通用框架） | 人 + AI |
+| `shuzi_zhuyun.md` | 数字助运（标杆样例） | 人 + AI |
+| `yanse_zhuyun.md` | 颜色助运 | 人 + AI |
+| `fangwei_zhuyun.md` | 方位助运（不含贵人方位） | 人 + AI |
 
-> 本骨架阶段以上文件**尚未创建**，将在后续 PR 中迁移或新建。
+> 助运系列以 `zhuyun_overview.md` 为入口，各专题文件应用同一套"用神 + 五行映射 + 时空加权"三层框架。新增助运专题（贵人方位 / 材质 / 饮食 / 时辰等）应保持同样命名与结构。
 
 ## 关键边界规则
 
@@ -46,6 +50,8 @@ methodology 是仓库的**核心资产之一**，演化要谨慎、要有积累�
 
 如三元九运（`sanyuan_jiuyun.md`）这种相对独立、自成体系的内容，单独成文。未来如有类似主题（如神煞专题、调候用神专题），同样独立。
 
+**助运系列特殊约定**：所有助运维度（数字 / 颜色 / 方位 / 贵人 / 材质…）共享 `zhuyun_overview.md` 中的"三层叠加框架"，各维度专题以 `zhuyun_overview.md` 为入口，文件命名为 `{维度拼音}_zhuyun.md`（数字 → `shuzi_zhuyun.md`，颜色 → `yanse_zhuyun.md`，方位 → `fangwei_zhuyun.md`）。新增助运专题应保持同一命名与结构。硬映射表（五行 ↔ 颜色 / 方位 / 数字）仍归 `lookup_tables.md`。
+
 ### 规则 4：禁止排盘公式
 
 本仓库的工作流是"软件排盘 + AI 解读"，所以**不收录**：
@@ -72,6 +78,10 @@ methodology 的修订要**保守 + 可追溯**：
 methodology/lookup_tables.md
 methodology/basics.md
 methodology/sanyuan_jiuyun.md
+methodology/zhuyun_overview.md
+methodology/shuzi_zhuyun.md
+methodology/yanse_zhuyun.md
+methodology/fangwei_zhuyun.md
 ```
 
 不要在 prompts 中复制 methodology 的内容，始终通过引用，避免双份维护。
