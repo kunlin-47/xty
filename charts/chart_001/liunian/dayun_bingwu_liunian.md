@@ -715,7 +715,7 @@
 > ⚠️ **本章已迁移至 [`dayun_overview.md` §九 助运总论](./dayun_overview.md#九助运总论数字--颜色--饰品--饮食--时辰--起居)**
 >
 > 那里包含命局基线方案 + 八步大运逐运的助运微调汇总（数字、颜色、饰品、饮食、时辰、灵性等全部维度）。
-> 通用方法论参见 [`reference/shuzi_zhuyun.md`](../../reference/shuzi_zhuyun.md)。
+> 通用方法论参见 [`methodology/shuzi_zhuyun.md`](../../../methodology/shuzi_zhuyun.md)。
 
 ### 8.1 丙午运的核心助运微调（速查）
 
