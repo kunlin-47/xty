@@ -16,6 +16,7 @@ description: >
 2. **根据任务读对应 prompt**：
    - 完整解盘 → 读 `prompts/full_analysis.md`
    - 流年聚焦 → 读 `prompts/yearly_focus.md`
+   - 验前事（基于命局反推已发生的高能量事件）→ 读 `prompts/yan_qian_shi.md`
    - 已发生事件校验 → 读 `prompts/event_calibration.md`
 
 3. **按需引用知识资源**：
@@ -24,7 +25,7 @@ description: >
    - 三元九运专题 → `methodology/sanyuan_jiuyun.md`
    - 数字助运专题 → `methodology/shuzi_zhuyun.md`
 
-4. **如有命主历史档案**：读 `charts/{chart_id}/profile.md` 拿已发生事件做命中度校验。
+4. **如有命主历史档案**：读 `charts/{chart_id}/yan_qian_shi.md` 拿验前事推断与命主已确认的事件做命中度校验。
 
 ## 关键约束（治幻觉）
 

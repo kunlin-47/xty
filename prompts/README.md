@@ -10,7 +10,8 @@
 |---|---|
 | `full_analysis.md` | 完整解盘（命局、格局、十神、大运流年、总结一次性输出） |
 | `yearly_focus.md` | 流年聚焦（针对某一年或某一步大运的细化分析） |
-| `event_calibration.md` | 已发生事件校验（基于 profile.md 中的事件清单做命中度评估） |
+| `yan_qian_shi.md` | 验前事（基于命局反向推断已发生年份的高能量事件，供命主验证） |
+| `event_calibration.md` | 已发生事件校验（基于 yan_qian_shi.md 中的校验对话表 / 命主补充事件做命中度评估） |
 
 > 本骨架阶段以上文件**尚未创建**，将在后续 PR 中新建。
 
@@ -61,7 +62,7 @@ prompt 中需要用到 methodology 的内容时，**指明引用路径**，让 A
 
 ## 输入
 - charts/{chart_id}/static_chart.json   # 软件排盘
-- charts/{chart_id}/profile.md          # 命主基本信息和已发生事件
+- charts/{chart_id}/yan_qian_shi.md     # 命主验前事（基本信息 + 已验证 / 待验证事件）
 
 ## 知识引用
 - methodology/lookup_tables.md          # 必查：藏干、十神矩阵
