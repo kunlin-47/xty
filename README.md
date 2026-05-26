@@ -73,12 +73,10 @@ xty/
 
 | 当前位置 | 目标位置 | 处理方式 |
 |---|---|---|
-| `bazi/bazi_basics.md` | `methodology/basics.md` + `methodology/sanyuan_jiuyun.md` | 拆分迁移 |
 | `reference/shuzi_zhuyun.md` | 待定 | 不在本架构范围内，单独决策 |
 
 下一步推进路线（已完成的不再列出，详见 git history）：
 
-- 拆分 `bazi/bazi_basics.md` → `methodology/basics.md` + `methodology/sanyuan_jiuyun.md`，移除其中的硬数据。
 - 新建 `methodology/lookup_tables.md`（藏干、十神矩阵、刑冲合等结构化数据）。
 - 新建 `prompts/full_analysis.md` 等任务指令。
 
