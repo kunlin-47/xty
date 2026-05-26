@@ -29,12 +29,13 @@ xty/
 │   ├── README.md
 │   ├── full_analysis.md     # 完整解盘
 │   ├── yearly_focus.md      # 流年聚焦
+│   ├── yan_qian_shi.md      # 验前事（反向推断已发生年份的高能量事件）
 │   └── event_calibration.md # 已发生事件校验
 │
 └── charts/                  # 数据层：命主档案与解盘产出（回归测试集）
     ├── README.md
     └── chart_xxx/           # 编号化命名，不使用真名
-        ├── profile.md
+        ├── yan_qian_shi.md
         ├── static_chart.json
         ├── dayun_overview.md
         └── liunian/
